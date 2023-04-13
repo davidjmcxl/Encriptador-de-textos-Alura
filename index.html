@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logoA.svg" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Encriptador APP </title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logoA.svg" alt="logo">
+            </div>
+
+        </header>
+    
+            <div class="container">
+                <div class="content">
+                <div contenteditable class="text-area" id="tranform-text" ></div>
+                
+                    <div class="aviso" id="aviso">
+                        <img src="img/aviso.svg" alt="msg">
+                        <p class="aviso-text">
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                    
+                    </div>
+                    <div class="btn">
+                        <button class="btn-enc" onclick="encriptar()">Encriptar</button>
+                        <button class="btn-des" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+                
+                <div class="response">
+                    <img src="img/Muñeco.png" class="muneco" id="muneco"alt="">
+                    <p class="response-msg " id="response-msg">Ningun Mensaje Encontrado</p>
+                    <p class="response-text" id="response-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="copy" id="copy" onclick="copiar()"> copiar</button>
+                </div>
+            </div>
+
+    
+    <script src="js/encriptar.js"></script>
+        
+    </body>
+    </html>
